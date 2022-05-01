@@ -31,9 +31,10 @@ pipeline {
             }
         }
     }
+
     post {
-            always {
-                cucumber '**/*.json'
-            }
+        always {
+            cucumber '**/*.json'
         }
+    }
 }
